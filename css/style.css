@@ -1,0 +1,110 @@
+body{
+    font-family: "Nexa";
+    font-size: 36px;
+}
+
+.container-fluid{
+    max-width: 1280px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-map{
+    height: 64vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+#map {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../font/Nexa Bold.otf");
+}
+
+.title{
+    border-bottom: solid 3px #cc3300;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+}
+
+.subtitle{
+    font-size: 0.8em;
+    margin-bottom: 0px;
+}
+
+.table-clima{
+    display: flex;
+    flex-direction: column
+}
+
+.table-clima-header{
+    background-color: #cc3300;
+}
+
+.table-clima-header,
+.table-clima-content{
+    display: flex;
+}
+
+.table-title{
+    font-size: 0.7em;
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.icon-cursor{
+    height: 30px;
+}
+
+.btn-location{
+    background-color: #cc3300;
+    border: solid 2px #cc3300 !important;
+    border-radius: 0px;
+    font-size: 0.8em;
+    background-image: url(../img/icon/Icon_GPS.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) 50%;
+    background-size: auto 70%;
+}
+
+.btn-location:hover,
+.btn-location:focus,
+.btn-location:active{
+    background-color: white;
+    color: #cc3300;
+    box-shadow: none;
+}
+
+@media (max-device-width: 576px){
+    .content-map {
+        height: 45vh;
+    }
+    
+    .content-subtitle{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .content-subtitle DIV {
+        width: auto;
+        flex-grow: 0;
+    }
+    
+    .container-fluid {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    
+    .btn-location {
+        width: 280px !important;
+    }
+    
+}
